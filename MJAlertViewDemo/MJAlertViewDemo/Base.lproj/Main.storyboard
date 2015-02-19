@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gk-G5-3Ei">
+                                <rect key="frame" x="76" y="190" width="168" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="36L-LT-9v5"/>
+                                    <constraint firstAttribute="height" constant="30" id="rtc-aL-Ho5"/>
+                                </constraints>
+                                <state key="normal" title="Show Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0QA-mR-n3l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8aH-SH-oU1">
+                                <rect key="frame" x="51" y="57" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="NNx-u4-uUX"/>
+                                    <constraint firstAttribute="height" constant="30" id="Sqa-kB-ZbG"/>
+                                </constraints>
+                                <state key="normal" title="Show Dismissable Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showDismissableAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="xTv-XS-Jf3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPW-Jx-9Ih">
+                                <rect key="frame" x="76" y="257" width="168" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="l5t-SM-tkt"/>
+                                    <constraint firstAttribute="height" constant="30" id="wyt-oq-pQa"/>
+                                </constraints>
+                                <state key="normal" title="Dismiss">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="dismissAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jLt-jC-BJP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptv-MS-YG3">
+                                <rect key="frame" x="51" y="123" width="219" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="dlv-dX-6Qi"/>
+                                    <constraint firstAttribute="width" constant="219" id="ejj-1g-RRL"/>
+                                </constraints>
+                                <state key="normal" title="Show Wider Alert">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWiderAlert:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IdH-pF-Lkc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ptv-MS-YG3" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="9YV-oC-8EP"/>
+                            <constraint firstItem="ptv-MS-YG3" firstAttribute="top" secondItem="8aH-SH-oU1" secondAttribute="bottom" constant="36" id="Cy5-Yw-uOy"/>
+                            <constraint firstItem="aPW-Jx-9Ih" firstAttribute="top" secondItem="3Gk-G5-3Ei" secondAttribute="bottom" constant="37" id="Fst-s6-JF7"/>
+                            <constraint firstItem="ptv-MS-YG3" firstAttribute="leading" secondItem="8aH-SH-oU1" secondAttribute="leading" id="GkF-u3-bzV"/>
+                            <constraint firstItem="3Gk-G5-3Ei" firstAttribute="leading" secondItem="aPW-Jx-9Ih" secondAttribute="leading" id="OHA-qf-DUs"/>
+                            <constraint firstItem="3Gk-G5-3Ei" firstAttribute="top" secondItem="ptv-MS-YG3" secondAttribute="bottom" constant="37" id="ekB-ga-Yvx"/>
+                            <constraint firstItem="3Gk-G5-3Ei" firstAttribute="centerX" secondItem="ptv-MS-YG3" secondAttribute="centerX" id="hL5-cy-Fwt"/>
+                            <constraint firstItem="8aH-SH-oU1" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="37" id="iwq-2W-k5h"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
