@@ -5,11 +5,15 @@ Using it, is dead simple. Just add UIView's Category to your project and you are
 
 ## Functions
 
-1. Showing a simple dismissible alert 
-        [UIView addMJNotifierWithText:@"Hey there!" dismissAutomatically:YES];
+1. Showing a simple dismissible alert
+```
+[UIView addMJNotifierWithText:@"Hey there!" dismissAutomatically:YES];
+```
 
 2. Showing a persistent alert
-        [UIView addMJNotifierWithText:@"This won't go. Click Dismiss to hide it!" dismissAutomatically:YES];
+```
+[UIView addMJNotifierWithText:@"This won't go. Click Dismiss to hide it!" dismissAutomatically:NO];
+```
 
 Animation speed, Transforming values, changing dimensions and doing any other customization is very easy. Just go to UIView+MJAlertView.m and modify it. 
 
