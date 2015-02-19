@@ -1,7 +1,7 @@
 # MJAlertView
 Simple automatic Dismissible Alert with minor 3D Transforms. Produces an effect similar to Saavn's dismissible Alerts
 
-Using it, is dead simple. Just add UIView's Category to your project and you are done!
+Using it, is dead simple. Just add UIView+MJAlertView Category to your project and you are good to go!
 
 ## Functions
 
