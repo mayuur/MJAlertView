@@ -9,11 +9,16 @@ Using it, is dead simple. Just add UIView+MJAlertView Category to your project a
 ```
 [UIView addMJNotifierWithText:@"Hey there!" dismissAutomatically:YES];
 ```
+![simpleAlert](simpleAlert.gif)
+![widerAlert](widerAlert.gif)
+
 
 2. Showing a persistent alert
 ```
 [UIView addMJNotifierWithText:@"This won't go. Click Dismiss to hide it!" dismissAutomatically:NO];
 ```
+![cancelAlert](cancelAlert.gif)
+![dismissAlert](dismissAlert.gif)
 
 Animation speed, Transforming values, changing dimensions and doing any other customization is very easy. Just go to UIView+MJAlertView.m and modify it. 
 
